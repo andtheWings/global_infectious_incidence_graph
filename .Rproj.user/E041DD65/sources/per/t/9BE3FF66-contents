@@ -1,0 +1,68 @@
+---
+title: "Untitled"
+author: "Daniel P. Hall Riggins, MD"
+date: "`r Sys.Date()`"
+output: html_document
+---
+
+```{r}
+library(targets)
+library(readr)
+library(tidyr)
+library(dplyr)
+library(tidygraph)
+library(ggraph)
+```
+
+```{r}
+tar_make()
+tar_load_everything()
+
+nodes<- 
+    tibble(
+        country = colnames(gbd_pre_huge_glasso)
+    ) |> 
+    mutate(
+        index_num = row_number()
+    )
+
+edges <-
+    gbd_huge_glasso_ric$refit |> 
+    as_tbl_graph() |> 
+    activate(edges) |> 
+    as_tibble() 
+
+edges |> 
+    left_join(
+        nodes,
+        by = c("from" = "index_num")
+    ) |> 
+    select(-from) |> 
+    rename(from = country) |> 
+    left_join(
+        nodes,
+        by = c("to" = "index_num")
+    ) |> 
+    select(-to) |> 
+    rename(to = country)
+
+
+
+
+ggraph(
+    gbd_graph
+) +
+geom_node_point(
+) +
+geom_edge_fan()
+```
+```{r}
+gbd_huge_glasso_ric$refit
+```
+```{r}
+rstat_nodes <- data.frame(name = c("Hadley", "David", "Romain", "Julia"))
+rstat_edges <- data.frame(from = c(1, 1, 1, 2, 3, 3, 4, 4, 4),
+                            to = c(2, 3, 4, 1, 1, 2, 1, 2, 3))
+tbl_graph(nodes = rstat_nodes, edges = rstat_edges, node_key = "name")
+```
+

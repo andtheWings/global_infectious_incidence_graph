@@ -1,0 +1,32 @@
+"0","tbl_graph(nodes = rstat_nodes, edges = rstat_edges, node_key = ""name"")
+"
+"1","[38;5;246m# A tbl_graph: 4 nodes and 9 edges
+[39m"
+"1","[38;5;246m#
+[39m"
+"1","[38;5;246m# A directed simple graph with 1 component
+[39m"
+"1","[38;5;246m#
+[39m"
+"1","[38;5;246m# Node Data: 4 × 1 (active)[39m
+  name  
+  [3m[38;5;246m<chr>[39m[23m 
+[38;5;250m1[39m Hadley
+[38;5;250m2[39m David 
+[38;5;250m3[39m Romain
+[38;5;250m4[39m Julia "
+"1",""
+"1","
+"
+"1","[38;5;246m#
+[39m"
+"1","[38;5;246m# Edge Data: 9 × 2[39m
+   from    to
+  [3m[38;5;246m<int>[39m[23m [3m[38;5;246m<int>[39m[23m
+[38;5;250m1[39m     1     2
+[38;5;250m2[39m     1     3
+[38;5;250m3[39m     1     4
+[38;5;246m# … with 6 more rows[39m"
+"1",""
+"1","
+"

@@ -1,0 +1,16 @@
+name|type|data|command|depend|seed|path|time|size|bytes|format|repository|iteration|parent|children|seconds|warnings|error
+assemble_gbd_geo_graph|function|91fe64df9da937d7|||||||||||||||
+assemble_gbd_graph|function|645155fc994600d4|||||||||||||||
+gbd_geo_graph|stem|050d399f7b4e93d2|a99543fd0c720678|2dc6c3e31a07a104|2101900692||t19135.8304132578s|1fe78ad0129d8883|8555|rds|local|vector|||0.06||
+gbd_graph|stem|95bf903a23b79ff6|73861a64893ef825|e71aea23f3205790|606321169||t19135.8451138975s|6cdb6466371452eb|384803|rds|local|vector|||0.064||
+gbd_huge_glasso|stem|b865913e66c493c8|57fe66a48979ed17|ee11b13caf238cac|-329039966||t19132.6500972471s|a8ba08f459f28365|4853798|rds|local|vector|||317.729||
+gbd_huge_glasso_ric|stem|173b513f5fae4651|c88111f04d106f26|0f9c31a38fa2d042|-620707410||t19132.6507220702s|5c1dc1f3b21c89e7|5280075|rds|local|vector|||53.496||
+gbd_pre_huge_glasso|stem|a4d057943517f633|8362d151cc2f1a4d|4abe30297226b5e1|-702734735||t19132.622388061s|d97a56c014cfea97|319686|rds|local|vector|||0.116||
+gbd_raw|stem|21b1d266cebab679|4b21c15313ce74e7|99205a1c7cbea205|-1660425678||t19130.9390648222s|363a3204c6689f54|1113025|rds|local|vector|||0.286||
+gbd_raw_file|stem|32e27b4b18a56c82|5acfc8320fd9962e|ef46db3751d8e999|-2060841348|data/IHME-GBD_2019_DATA-25cc5417-1.csv|t19131.1177546296s|508af837e7aafdf9|5936311|file|local|vector|||0.246||
+world_geo|stem|51f48d0bf4361e0e|553e29e999218ad0|cacdbf43c1f4602f|1460678636||t19132.6193919622s|aaa08c7b9bcb67d7|7519|rds|local|vector|||0.24||
+world_geo_raw_file|stem|061e67e28fd7fd17|f17ee542dc70a7a2|ef46db3751d8e999|-592185233|data/countries.csv|t19132.5788913551s|27189ac93b7c5377|15988|file|local|vector|||1.336||
+wrangle_gbd_pre_ggm|function|fe805bf9160a735f|||||||||||||||
+wrangle_gbd_pre_huge_glasso|function|70301fc00a457d53|||||||||||||||
+wrangle_ric_to_edges|function|228c81a2036bc85c|||||||||||||||
+wrangle_world_geo|function|296dddab7ea8753b|||||||||||||||
